@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/5B29Pwt/img1.png",
+    "name": "Introduction to C Programming",
+    "details": "Learn the fundamentals of C programming, including variables, control structures, and functions in this beginner-friendly course.",
+    "price": "15000",
+    "credit": "1"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/yRmY2RP/img2.png",
+    "name": "Introduction to Algorithms",
+    "details": "Dive into the world of algorithms, mastering their design and analysis with a focus on efficient problem-solving techniques.",
+    "price": "25000",
+    "credit": "2"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/Vm9KxSJ/img3.png",
+    "name": "Introduction to C++ for DSA",
+    "details": "Explore C++ in-depth for Data Structures and Algorithms (DSA) with a course that combines sleek design and powerful concepts.",
+    "price": "10000",
+    "credit": "10"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/Jtbv0MF/img4.png",
+    "name": "Basic Data Structures",
+    "details": "Build a strong foundation in data structures, covering arrays, linked lists, and trees, to excel in computer science.",
+    "price": "35000",
+    "credit": "5"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/kHbjqcV/img5.png",
+    "name": "Introduction to OOP Python",
+    "details": "Delve into Python's Object-Oriented Programming (OOP), harnessing cutting-edge technology to create versatile, efficient programs.",
+    "price": "19000",
+    "credit": "5"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/HHNT0gJ/img6.png",
+    "name": "Software Engineering",
+    "details": "Master the art of Software Engineering, gaining expertise in developing, maintaining, and optimizing software systems.",
+    "price": "23000",
+    "credit": "2"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/NYWb9wg/img7.png",
+    "name": "AWS, Cloud Computing",
+    "details": "Explore Amazon Web Services (AWS) and cloud computing, achieving a balance of affordability and feature-rich cloud solutions.",
+    "price": "35000",
+    "credit": "5"
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/K2y3chJ/img8.png",
+    "name": "Database (MySQL)",
+    "details": "Become a MySQL professional, learning the ins and outs of this powerful database system for efficient data management.",
+    "price": "19000",
+    "credit": "5"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/jHtPmRM/img9.png",
+    "name": "Problem-Solving Part",
+    "details": "Enhance your problem-solving skills, applying versatile techniques to tackle various challenges in diverse contexts.",
+    "price": "23000",
+    "credit": "2"
+  }
+]
