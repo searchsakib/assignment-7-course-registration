@@ -1,23 +1,26 @@
 const Home = () => {
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <figure className="px-10 pt-10">
+      <div className="card w-[312px] bg-base-100 shadow-xl">
+        <figure className="px-4 pt-4">
           <img
             src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
             alt="Shoes"
             className="rounded-xl"
           />
         </figure>
-        <div className="card-body items-center text-center">
-          <h2 className="card-title">Introduction to C Programming</h2>
-          <p>
+        <div className="card-body p-4">
+          <h2 className="text-lg font-semibold text-left">
+            Introduction to C Programming
+          </h2>
+          <p className="text-left text-sm ">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </p>
-          <div className="flex gap-10">
+          <div className="flex gap-[32px] pt-[12px] pb-[17px] font-medium">
             <div className="flex">
               <svg
+                className="mr-3"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -43,6 +46,7 @@ const Home = () => {
             </div>
             <div className="flex">
               <svg
+                className="mr-3"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -62,8 +66,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="card-actions">
-            <button className="btn btn-primary">Buy Now</button>
+          <div>
+            <button className="btn bg-[#2F80ED] text-white w-[280px] font-semibold text-lg">
+              Select
+            </button>
           </div>
         </div>
       </div>
