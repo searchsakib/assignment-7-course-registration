@@ -15,7 +15,7 @@ const Home = () => {
   }, []);
 
   const handleClick = (selectedCard) => {
-    setListName(selectedCard);
+    setListName([...listName, selectedCard]);
   };
 
   useEffect(() => {

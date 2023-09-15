@@ -1,4 +1,5 @@
 const Sidebar = ({ listName }) => {
+  let count = 0;
   return (
     <div>
       <div className="card bg-base-100 shadow-xl p-6 ">
@@ -9,10 +10,12 @@ const Sidebar = ({ listName }) => {
           Course Name
         </h2>
         <ul className="pb-6 border-b-2 border-[#1c1b1b33] ">
-          <li>{listName.name}</li>
-          {/* <li>Introduction to c programming</li>
-          <li>Introduction to C++</li>
-          <li>Software Engineering</li> */}
+          {listName.map((card, idx) => (
+            <li className="pb-2" key={idx}>
+              {' '}
+              {++count}. {card.name}
+            </li>
+          ))}
         </ul>
         <p className="font-medium pt-4">
           Total Credit Hour : <span>13</span>{' '}
