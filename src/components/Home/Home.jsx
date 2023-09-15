@@ -1,4 +1,15 @@
+import { useState } from 'react';
+import { useEffect } from 'react';
+
 const Home = () => {
+  const [card, setCard] = useState([]);
+
+  useEffect(() => {
+    fetch('./data.json')
+      .then((res) => res.json())
+      .then((data) => setCard(data));
+  }, []);
+  console.log(card);
   return (
     <div>
       <div className="card w-[312px] bg-base-100 shadow-xl">
