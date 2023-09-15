@@ -1,12 +1,18 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
-
-let nextId = 0;
+import swal from 'sweetalert';
 
 const Home = () => {
   const [cards, setCards] = useState([]);
   const [listName, setListName] = useState([]);
+
+  swal({
+    icon: 'info',
+    title: 'Oops...',
+    text: "Can't add the same course Twice!",
+    buttons: 'Okay',
+  });
 
   useEffect(() => {
     fetch('./data.json')
