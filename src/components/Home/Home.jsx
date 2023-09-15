@@ -17,10 +17,10 @@ const Home = () => {
   const handleClick = (selectedCard) => {
     setListName([...listName, selectedCard]);
   };
-
-  useEffect(() => {
-    console.log(listName);
-  }, [listName]);
+  // console.log(listName);
+  // useEffect(() => {
+  //   console.log(listName);
+  // }, [listName]);
 
   return (
     <div className="flex gap-6 pb-20">
