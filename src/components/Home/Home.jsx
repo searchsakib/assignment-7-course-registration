@@ -2,14 +2,25 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 
+let nextId = 0;
+
 const Home = () => {
   const [cards, setCards] = useState([]);
+  const [listName, setListName] = useState([]);
 
   useEffect(() => {
     fetch('./data.json')
       .then((res) => res.json())
       .then((data) => setCards(data));
   }, []);
+
+  const handleClick = (selectedCard) => {
+    setListName(selectedCard);
+  };
+
+  useEffect(() => {
+    console.log(listName);
+  }, [listName]);
 
   return (
     <div className="flex gap-6 pb-20">
@@ -72,7 +83,10 @@ const Home = () => {
                 </div>
               </div>
               <div>
-                <button className="btn bg-[#2F80ED] text-white  font-semibold text-lg w-full">
+                <button
+                  onClick={() => handleClick(card)}
+                  className="btn bg-[#2F80ED] text-white  font-semibold text-lg w-full"
+                >
                   Select
                 </button>
               </div>
@@ -81,7 +95,7 @@ const Home = () => {
         ))}
       </div>
       <div className="w-1/4">
-        <Sidebar></Sidebar>
+        <Sidebar listName={listName}></Sidebar>
       </div>
     </div>
   );

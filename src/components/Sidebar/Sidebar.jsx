@@ -1,4 +1,4 @@
-const Sidebar = () => {
+const Sidebar = ({ listName }) => {
   return (
     <div>
       <div className="card bg-base-100 shadow-xl p-6 ">
@@ -9,9 +9,10 @@ const Sidebar = () => {
           Course Name
         </h2>
         <ul className="pb-6 border-b-2 border-[#1c1b1b33] ">
-          <li>Introduction to c programming</li>
+          <li>{listName.name}</li>
+          {/* <li>Introduction to c programming</li>
           <li>Introduction to C++</li>
-          <li>Software Engineering</li>
+          <li>Software Engineering</li> */}
         </ul>
         <p className="font-medium pt-4">
           Total Credit Hour : <span>13</span>{' '}
