@@ -7,12 +7,7 @@ const Home = () => {
   const [cards, setCards] = useState([]);
   const [listName, setListName] = useState([]);
 
-  swal({
-    icon: 'info',
-    title: 'Oops...',
-    text: "Can't add the same course Twice!",
-    buttons: 'Okay',
-  });
+  // swal('Oops...', "Can't add the same course Twice!", 'info');
 
   useEffect(() => {
     fetch('./data.json')
@@ -23,10 +18,6 @@ const Home = () => {
   const handleClick = (selectedCard) => {
     setListName([...listName, selectedCard]);
   };
-  // console.log(listName);
-  // useEffect(() => {
-  //   console.log(listName);
-  // }, [listName]);
 
   return (
     <div className="flex gap-6 pb-20">
