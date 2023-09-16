@@ -16,7 +16,13 @@ const Home = () => {
   }, []);
 
   const handleClick = (selectedCard) => {
-    setListName([...listName, selectedCard]);
+    const isPresent = listName.find((item) => item.id == selectedCard.id);
+    if (isPresent) {
+      console.log(isPresent);
+      return swal('Sorry...', "You can't add the same course Twice!", 'info');
+    } else {
+      setListName([...listName, selectedCard]);
+    }
   };
 
   return (
