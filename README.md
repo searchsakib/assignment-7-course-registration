@@ -11,8 +11,8 @@ exciting features:
 
 - **Interactive User Interface:** The website provides an interactive and visually appealing user interface. Users can view course details, including images, names, prices, and credit hours, and make selections with a "Select" button.
 
-# How I managed the state in my assignment project:
+# How I managed the state in my assignment project
 
-&emsp;&emsp;&emsp;In my course registration assignment project, I managed state using React's useState hook. I declared and controlled several state variables, including **<u>cards</u>**, **<u>listName</u>**, **<u>addCredit</u>**, and **<u>remainingCredit</u>**. When I interacted with the project, such as adding a course, I updated these state variables as needed. For example, with the **<u>cards</u>** state variable, I rendered all the cards. Then, when I added a course, I updated the **<u>listName</u>** to maintain a list of selected courses. The **<u>addCredit</u>** state variable kept track of the total credit hours selected, and **<u>remainingCredit</u>** reflected the available credit hours after my course selections.
+&emsp;&emsp;&emsp;In my course registration assignment project, I managed state using React's useState hook. I declared and controlled several state variables, including **cards**, **listName**, **addCredit**, and **remainingCredit**. When I interacted with the project, such as adding a course, I updated these state variables as needed. For example, with the **cards<** state variable, I rendered all the cards. Then, when I added a course, I updated the **listName** to maintain a list of selected courses. The **addCredit** state variable kept track of the total credit hours selected, and **remainingCredit** reflected the available credit hours after my course selections.
 
 &emsp;&emsp;&emsp;These state variables, once updated, dynamically influenced the rendering of components and UI elements in response to my actions, ensuring that the project remained interactive and responsive.
