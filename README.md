@@ -3,7 +3,7 @@
 I built a course registration website with react. In my website , I have some
 exciting features:
 
-- **Course Selection:** Users can easily add courses to their list for future reference or planning. The website simplifies the process of selecting courses of interest and provides an intuitive interface for managing their selections.
+- **Course Selection:** Users can easily add courses to Course Name list for future reference or planning. The website simplifies the process of selecting courses of interest and provides an intuitive interface for managing their selections.
 
 - **Credit Hour Management:** The website offers users the ability to add credit hours for each course they select. It simplifies the process of tracking and managing the credit hours associated with their chosen courses.
 
