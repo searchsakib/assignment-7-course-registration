@@ -103,7 +103,7 @@ const Home = () => {
               <div>
                 <button
                   onClick={() => handleClick(card)}
-                  className="btn bg-[#2F80ED] text-white  font-semibold text-lg w-full"
+                  className="btn bg-[#2F80ED] text-white hover:border-[#2F80ED] hover:bg-[#e8eef7] hover:text-[#2F80ED]  font-semibold text-lg w-full"
                 >
                   Select
                 </button>
