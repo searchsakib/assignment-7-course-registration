@@ -29,8 +29,11 @@ const Home = () => {
         count = ~~count + ~~itemCredit.credit;
       });
       // console.log(count);
-      setAddCredit(count);
+      if (count > 20) {
+        return swal("Credit hour can't exceed 20 hours", '', 'warning');
+      }
 
+      setAddCredit(count);
       setListName([...listName, selectedCard]);
     }
   };
@@ -46,7 +49,7 @@ const Home = () => {
             <div className="card-body p-4">
               <h2 className="text-lg font-semibold text-left">{card.name}</h2>
               <p className="text-left text-sm ">{card.details}</p>
-              <div className="flex gap-[22px] pt-[12px] pb-[17px] font-medium">
+              <div className="flex gap-[18px] pt-[12px] pb-[17px] font-medium">
                 <div className="flex">
                   <svg
                     className="mr-3"
