@@ -1,5 +1,5 @@
 const Sidebar = ({ listName }) => {
-  let count = 0;
+  let num = 0;
   return (
     <div>
       <div className="card bg-base-100 shadow-xl p-6 ">
@@ -13,7 +13,7 @@ const Sidebar = ({ listName }) => {
           {listName.map((card, idx) => (
             <li className="pb-2" key={idx}>
               {' '}
-              {++count}. {card.name}
+              {++num}. {card.name}
             </li>
           ))}
         </ul>

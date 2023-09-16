@@ -19,7 +19,7 @@ const Home = () => {
     const isPresent = listName.find((item) => item.id == selectedCard.id);
     if (isPresent) {
       console.log(isPresent);
-      return swal('Sorry...', "You can't add the same course Twice!", 'info');
+      return swal('You already selected this course!', '', 'warning');
     } else {
       setListName([...listName, selectedCard]);
     }
