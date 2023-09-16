@@ -7,6 +7,7 @@ const Home = () => {
   const [cards, setCards] = useState([]);
   const [listName, setListName] = useState([]);
   const [addCredit, setAddCredit] = useState(0);
+  const [remainingCredit, setRemainingCredit] = useState(20);
 
   // swal('Oops...', "Can't add the same course Twice!", 'info');
 
@@ -30,11 +31,12 @@ const Home = () => {
       });
       // console.log(count);
       if (count > 20) {
-        return swal("Credit hour can't exceed 20 hours", '', 'warning');
+        return swal("Credit can't exceed 20 hours", '', 'warning');
       }
 
       setAddCredit(count);
       setListName([...listName, selectedCard]);
+      setRemainingCredit(20 - count);
     }
   };
 
@@ -111,7 +113,11 @@ const Home = () => {
         ))}
       </div>
       <div className="w-1/4">
-        <Sidebar listName={listName} addCredit={addCredit}></Sidebar>
+        <Sidebar
+          listName={listName}
+          addCredit={addCredit}
+          remainingCredit={remainingCredit}
+        ></Sidebar>
       </div>
     </div>
   );

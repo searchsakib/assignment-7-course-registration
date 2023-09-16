@@ -1,10 +1,10 @@
-const Sidebar = ({ listName, addCredit }) => {
+const Sidebar = ({ listName, addCredit, remainingCredit }) => {
   let num = 0;
   return (
     <div>
       <div className="card bg-base-100 shadow-xl p-6 ">
         <h2 className="text-[#2F80ED] font-bold text-lg pb-4 border-b-2 border-[#1c1b1b33]">
-          Credit Hour Remaining <span>7</span> hr
+          Credit Hour Remaining <span> {remainingCredit} </span> hr
         </h2>
         <h2 className="font-bold text-xl text-[#1C1B1B] pt-4 pb-5">
           Course Name
