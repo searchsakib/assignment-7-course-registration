@@ -6,6 +6,7 @@ import swal from 'sweetalert';
 const Home = () => {
   const [cards, setCards] = useState([]);
   const [listName, setListName] = useState([]);
+  const [addCredit, setAddCredit] = useState(0);
 
   // swal('Oops...', "Can't add the same course Twice!", 'info');
 
@@ -21,13 +22,14 @@ const Home = () => {
     // console.log(count);
 
     if (isPresent) {
-      console.log(isPresent);
+      // console.log(isPresent);
       return swal('You already selected this course!', '', 'warning');
     } else {
       listName.forEach((itemCredit) => {
         count = ~~count + ~~itemCredit.credit;
       });
-      console.log(count);
+      // console.log(count);
+      setAddCredit(count);
 
       setListName([...listName, selectedCard]);
     }
@@ -106,7 +108,7 @@ const Home = () => {
         ))}
       </div>
       <div className="w-1/4">
-        <Sidebar listName={listName}></Sidebar>
+        <Sidebar listName={listName} addCredit={addCredit}></Sidebar>
       </div>
     </div>
   );

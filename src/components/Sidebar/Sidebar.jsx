@@ -1,4 +1,4 @@
-const Sidebar = ({ listName }) => {
+const Sidebar = ({ listName, addCredit }) => {
   let num = 0;
   return (
     <div>
@@ -18,7 +18,7 @@ const Sidebar = ({ listName }) => {
           ))}
         </ul>
         <p className="font-medium pt-4">
-          Total Credit Hour : <span>13</span>{' '}
+          Total Credit Hour : <span> {addCredit} </span>{' '}
         </p>
       </div>
     </div>
