@@ -17,10 +17,18 @@ const Home = () => {
 
   const handleClick = (selectedCard) => {
     const isPresent = listName.find((item) => item.id == selectedCard.id);
+    let count = ~~selectedCard.credit;
+    // console.log(count);
+
     if (isPresent) {
       console.log(isPresent);
       return swal('You already selected this course!', '', 'warning');
     } else {
+      listName.forEach((itemCredit) => {
+        count = ~~count + ~~itemCredit.credit;
+      });
+      console.log(count);
+
       setListName([...listName, selectedCard]);
     }
   };
